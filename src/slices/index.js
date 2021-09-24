@@ -1,10 +1,9 @@
-// src/slices/index.js
-import { combineReducers } from 'redux'
-
-import countryReducer from './country'
-
+import { combineReducers } from "redux";
+import countryReducer from "./country";
+import languageReducer from "./language";
 const rootReducer = combineReducers({
-  countries: countryReducer
-})
+  countries: countryReducer,
+  language: languageReducer
+});
 
-export default rootReducer
+export default rootReducer;
